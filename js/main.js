@@ -39,3 +39,15 @@ toggles.forEach((toggle, i) =>
     faqs[i].classList.toggle("active");
   })
 );
+
+// ==== SCROLL REVEAL ANIMATION  =====
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 300,
+});
+sr.reveal(".home .image, .sec-title, .sec-desc, .download .card");
+sr.reveal(".home  .text", { delay: 400 });
+sr.reveal(".features", { origin: "left", interval: 300});
+sr.reveal(".faq ul, .contact span, .contact form ", { origin: "right" });
